@@ -1,0 +1,79 @@
+
+
+
+
+  ---------------------------------------------------   
+  
+  when web-page loaded into browser ,
+  JS-engine will create 'global Execution Context'
+ 
+  window === this
+  
+  
+  execution-context ==> 
+  memory includes args&local-var with instruction to get execute
+  
+  
+  ExecutionContext - 2 phases
+  
+  1. context-creation phase
+  
+     -->all variables will get hoisted(lifting-up) to top of context with
+        default value(undefined)
+     --> all global-var will become property of global-obj.   
+  
+  2. context-execution phase
+  
+  ---------------------------------------------------   
+  
+  every func-call also creates new-execution context , which is child of above
+  
+  ---------------------------------------------------  
+  
+   JS
+   ---
+   
+     --> single-threaded lang
+     --> it supports better concurrency
+     --> we can do non-blocking IO
+     --> can process results asynch
+     
+     --> callback?
+  
+  
+    e.g chrome-bowser
+    
+        1. JS-engine ( v8 )
+        
+           single-call-stack
+           heap
+           
+        2. Web APIs ( e.g DOM , XHR , Timer , HTML-5 APIs )   
+        3. callback-queue
+        4. Event-Loop
+        
+        
+        ----------------------------
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
